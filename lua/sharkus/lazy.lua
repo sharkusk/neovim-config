@@ -37,6 +37,9 @@ require("lazy").setup({
         -- Snippets
         {'L3MON4D3/LuaSnip'},             -- Required
         {'rafamadriz/friendly-snippets'}, -- Optional
-    }
-}
+    }},
+    {'nvim-lualine/lualine.nvim',
+    dependencies = {
+        {'kyazdani42/nvim-web-devicons', opt = true}
+    }},
 })
