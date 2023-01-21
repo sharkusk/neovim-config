@@ -35,4 +35,3 @@ if vim.fn.isdirectory(undodir) == 0 then
 end
 
 vim.opt.termguicolors = true
-vim.g.mapleader = " "

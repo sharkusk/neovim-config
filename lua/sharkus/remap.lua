@@ -1,3 +1,4 @@
+
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 -- in visual mode, move highlighted blocks of text up and down using J,K
@@ -17,4 +18,7 @@ vim.keymap.set("n", "N", "Nzzzv")
 
 -- keep original buffer when pasting overwrite
 vim.keymap.set("x", "<leader>p", "\"_dP")
+
+-- exit insert mode by pressing jk
+vim.keymap.set("i", "jk", "<esc>")
 
