@@ -14,7 +14,8 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
     {'nvim-telescope/telescope.nvim', tag = '0.1.1', dependencies = { {'nvim-lua/plenary.nvim'} }},
     --{'sainnhe/everforest', name='everforest', config = function() vim.cmd('colorscheme everforest') end},
-    {'jnurmine/Zenburn', name='zenburn', config = function() vim.cmd('colorscheme zenburn') end},
+    --{'jnurmine/Zenburn', name='zenburn', config = function() vim.cmd('colorscheme zenburn') end},
+    {'EdenEast/nightfox.nvim', name='nightfox', config = function() vim.cmd('colorscheme nordfox') end},
     {'nvim-treesitter/nvim-treesitter', build = ':TSUpdate'},
     {'mbbill/undotree'},
     {'tpope/vim-fugitive'},
@@ -40,6 +41,7 @@ require("lazy").setup({
     }},
     {'nvim-lualine/lualine.nvim',
     dependencies = {
-        {'kyazdani42/nvim-web-devicons', opt = true}
+        {'nvim-tree/nvim-web-devicons', opt = true}
     }},
+    {'nvim-tree/nvim-tree.lua', dependencies = { 'nvim-tree/nvim-web-devicons' }},
 })

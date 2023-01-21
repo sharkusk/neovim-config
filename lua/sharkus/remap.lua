@@ -1,5 +1,4 @@
-
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+vim.keymap.set("n", "<leader>pv", vim.cmd.NvimTreeToggle)
 
 -- in visual mode, move highlighted blocks of text up and down using J,K
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
@@ -21,4 +20,3 @@ vim.keymap.set("x", "<leader>p", "\"_dP")
 
 -- exit insert mode by pressing jk
 vim.keymap.set("i", "jk", "<esc>")
-
