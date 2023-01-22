@@ -1,3 +1,6 @@
+-- Options are automatically loaded before lazy.nvim startup
+-- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
+-- Add any additional options here
 vim.opt.backspace = "indent,eol,start"
 vim.opt.history = 50
 vim.opt.ruler = true
@@ -30,8 +33,8 @@ vim.opt.undofile = true
 local undodir = os.getenv("HOME") .. "/.vim/undodir"
 vim.opt.undodir = undodir
 if vim.fn.isdirectory(undodir) == 0 then
-    print("Creating undodir " .. undodir)
-    os.execute("mkdir -p " .. undodir)
+  print("Creating undodir " .. undodir)
+  os.execute("mkdir -p " .. undodir)
 end
 
 vim.opt.termguicolors = true
