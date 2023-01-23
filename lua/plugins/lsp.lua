@@ -10,16 +10,23 @@
 --require("lspconfig").clangd.setup({})
 local machine = vim.loop.os_uname().machine
 if machine == "aarch64" then
-    return {
-        "neovim/nvim-lspconfig",
-        ---@class PluginLspOpts
-        opts = {
-            ---@type lspconfig.options
-            servers = {
-                clangd = { mason = false },
-            },
-        },
-    }
+  return {
+    "neovim/nvim-lspconfig",
+    ---@class PluginLspOpts
+    opts = {
+      ---@type lspconfig.options
+      servers = {
+        clangd = { mason = false },
+      },
+      autoformat = false,
+    },
+  }
 else
-    return {}
+  return {
+    "neovim/nvim-lspconfig",
+    ---@class PluginLspOpts
+    opts = {
+      autoformat = false,
+    },
+  }
 end
