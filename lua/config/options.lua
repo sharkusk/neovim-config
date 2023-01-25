@@ -14,12 +14,12 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 
 vim.opt.wrap = false
-vim.opt.cursorline = true
+vim.opt.cursorline = false
 vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"
 vim.opt.colorcolumn = "80"
 
-vim.opt.updatetime = 50
+-- vim.opt.updatetime = 50
 
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
